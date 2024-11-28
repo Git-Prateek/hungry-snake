@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="controls">
+    <label for="speed">Snake Speed:</label>
+    <select id="speed" onchange="setSpeed()">
+      <option value="300">Slow</option>
+      <option value="250" selected>Medium</option>
+      <option value="200">Fast</option>
+    </select>
+  </div>
+  <canvas id="gameCanvas" width="400" height="400"></canvas>
+  <button id="restartButton" onclick="restartGame()" style="display: none;">Restart</button>
+  <script src="script.js"></script>
+</body>
+</html>
